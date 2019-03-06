@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gris"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.pruebat2innterfaces2.LogIn">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="150dp"
+        android:layout_height="156dp"
+        android:src="@drawable/rocketlogo"
+        app:civ_border_color="#EEEEEE"
+        app:civ_border_width="0dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorLink="@color/colorPrimaryDark" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorLink="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/btn_login"
+            android:text="Login" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
